@@ -68,7 +68,8 @@ All commands (sudo, pacman, yay, whoami, ping, etc.) can be executed inside the 
 
 # 3️⃣ Terminal (Docker) Version
 
-# Install Docker: https://docs.docker.com/get-docker/
+# Install Docker:
+https://docs.docker.com/get-docker/
 
 # Build and run:
 
