@@ -2,9 +2,9 @@
 
 This project provides a full Arch Linux environment that can run either in your browser or directly in your terminal. It includes sudo, pacman, and AUR helpers. Works on Linux, MacOS, Windows, iOS, and Android.
 
-Project Structure
+# Project Structure
 
-# archlunix/
+archlunix/
 │
 ├─ backend/
 │  ├─ arch-container/
@@ -18,47 +18,49 @@ Project Structure
    ├─ terminal.js
    └─ style.css
 
-Installation & Usage
+# Installation & Usage
 
 # 1️⃣ Clone the repository
 
-Install Git:
+# Install Git:
 
-Linux / MacOS:
+# Linux / MacOS:
 
-#MacOS
+# MacOS
 brew install git
-#Ubuntu/Debian
+# Ubuntu/Debian
 sudo apt install git
 
-Windows: https://git-scm.com/download/win
+# Windows:
+https://git-scm.com/download/win
 
 
-Clone:
+# Clone:
 
 git clone https://github.com/litaliano00-dev/archlunix.git
 cd archlunix
 
 # 2️⃣ Website Version
 
-Install Node.js:
+# Install Node.js:
 
-Linux / MacOS:
+# Linux / MacOS:
 
 # MacOS
 brew install node
 # Ubuntu/Debian
 sudo apt install nodejs npm
 
-Windows: https://nodejs.org/en/download/
+# Windows:
+https://nodejs.org/en/download/
 
 
-Run:
+# Run:
 
 cd backend
 node server.js
 
-Open in browser:
+# Open in browser:
 
 http://localhost:3000
 
@@ -66,9 +68,9 @@ All commands (sudo, pacman, yay, whoami, ping, etc.) can be executed inside the 
 
 # 3️⃣ Terminal (Docker) Version
 
-Install Docker: https://docs.docker.com/get-docker/
+# Install Docker: https://docs.docker.com/get-docker/
 
-Build and run:
+# Build and run:
 
 cd backend/arch-container
 docker build -t archlunix .
