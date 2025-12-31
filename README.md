@@ -79,6 +79,8 @@ docker run -it archlunix
 
 Inside the container, you can run all commands as root, including AUR helpers and sudo.
 
+#note. root password is root
+
 # Author
 
 Made by litaliano00-dev and Only Privacy Focused Tech Stuff (OPFTS).
