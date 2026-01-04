@@ -47,7 +47,7 @@ docker run -it --rm archlunix
 
 - Windows: enable Docker Desktop WSL integration
 - macOS / Linux: install Docker and Node.js
-- iOS / Android: browser version only
+- iOS / Android: browser version only (android and ios not avaible rn. still working on it)
 
 ## Author
 
