@@ -1,86 +1,58 @@
-# ArchLinux Web & Terminal Emulator
+# ArchLunix
 
-This project provides a full Arch Linux environment that can run either in your browser or directly in your terminal. It includes sudo, pacman, and AUR helpers. Works on Linux, MacOS, Windows, iOS, and Android.
+Web-based Arch Linux terminal emulator with AUR, sudo, and command support. Works in browser or real terminal via Docker.
 
-# Project Structure
+## Project Structure
 
 archlunix/
-│
 ├─ backend/
-│  ├─ arch-container/
-│  │  ├─ Dockerfile
-│  │  └─ init.sh
 │  ├─ server.js
-│  └─ package.json
-│
-└─ frontend/
-   ├─ index.html
-   ├─ terminal.js
-   └─ style.css
+│  ├─ package.json
+│  └─ arch-container/
+│      ├─ Dockerfile
+│      └─ init.sh
+├─ frontend/
+│  ├─ index.html
+│  ├─ terminal.js
+│  └─ style.css
 
-# Installation & Usage
+## Requirements
 
-# 1️⃣ Clone the repository
+- Docker & Docker Desktop (WSL integration for Windows)
+- Node.js v18+
+- Git
 
-# Install Git:
+## Installation
 
-# Linux / MacOS:
+### Clone
 
-# MacOS
-brew install git
-# Ubuntu/Debian
-sudo apt install git
-
-# Windows:
-https://git-scm.com/download/win
-
-
-# Clone:
-
-git clone https://github.com/litaliano00-dev/archlunix.git
+git clone https://github.com/litaliano00-dev/archlunix
 cd archlunix
 
-# 2️⃣ Website Version
-
-# Install Node.js:
-
-# Linux / MacOS:
-
-# MacOS
-brew install node
-# Ubuntu/Debian
-sudo apt install nodejs npm
-
-# Windows:
-https://nodejs.org/en/download/
-
-
-# Run:
+### Backend / Browser
 
 cd backend
+npm install
 node server.js
 
-# Open in browser:
+Open browser at http://localhost:3000
 
-http://localhost:3000
-
-All commands (sudo, pacman, yay, whoami, ping, etc.) can be executed inside the terminal emulator.
-
-# 3️⃣ Terminal (Docker) Version
-
-# Install Docker:
-https://docs.docker.com/get-docker/
-
-# Build and run:
+### Terminal / Docker
 
 cd backend/arch-container
 docker build -t archlunix .
-docker run -it archlunix
+docker run -it --rm archlunix
 
-Inside the container, you can run all commands as root, including AUR helpers and sudo.
+## Platform Notes
 
-#note. root password is root
+- Windows: enable Docker Desktop WSL integration
+- macOS / Linux: install Docker and Node.js
+- iOS / Android: browser version only
 
-# Author
+## Author
 
-Made by litaliano00-dev and Only Privacy Focused Tech Stuff (OPFTS).
+litaliano00-dev, Only Privacy Focused Tech Stuff (OPFTS)
+
+## License
+
+MIT
