@@ -33,6 +33,9 @@ cd archlunix
 
 cd backend
 npm install
+cd arch-container
+docker build -t archlunix .
+cd ..
 node server.js
 
 Open browser at http://localhost:3000
