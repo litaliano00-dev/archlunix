@@ -9,7 +9,7 @@ const term = new Terminal({
 term.open(document.getElementById("terminal"));
 term.write("Connecting to Arch Linux...\r\n");
 
-const socket = new WebSocket(ws://${location.host});
+const socket = new WebSocket(`ws://${location.host}`);
 
 socket.onmessage = (event) => {
   term.write(event.data);
