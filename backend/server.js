@@ -9,6 +9,7 @@ app.use(express.static("../frontend"));
 
 const server = app.listen(PORT, () => {
   console.log(`🌐 Web terminal running at http://localhost:${PORT}`);
+});
 
 const wss = new WebSocketServer({ server });
 
