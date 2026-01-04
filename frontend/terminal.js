@@ -1,9 +1,7 @@
 const term = new Terminal({
   cursorBlink: true,
   fontSize: 14,
-  theme: {
-    background: "#000000"
-  }
+  theme: { background: "#000000" }
 });
 
 term.open(document.getElementById("terminal"));
@@ -15,7 +13,7 @@ socket.onmessage = (event) => {
   term.write(event.data);
 };
 
-term.onData(data => {
+term.onData((data) => {
   socket.send(data);
 });
 
