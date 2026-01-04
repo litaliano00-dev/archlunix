@@ -7,9 +7,8 @@ RUN pacman -Sy --noconfirm \
     sudo base-devel git nano neovim openssh go
 
 RUN useradd -m unix && \
-    echo "unix:root" | chpasswd && \
-    echo "root:root" | chpasswd && \
-    echo "unix ALL=(ALL) ALL" >> /etc/sudoers
+    echo "unix ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
+    echo "root:root" | chpasswd
 
 COPY init.sh /init.sh
 RUN chmod +x /init.sh
