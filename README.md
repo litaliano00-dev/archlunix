@@ -59,3 +59,6 @@ litaliano00-dev, Only Privacy Focused Tech Stuff (OPFTS)
 ## License
 
 MIT
+
+## ⚠️⚠️ATTENTION⚠️⚠️
+Disclaimer: This project is an independent, community-driven tool and is not affiliated with, endorsed by, or an official product of the Arch Linux project. Arch Linux is a trademark of Judd Vinet and Aaron Griffin.
